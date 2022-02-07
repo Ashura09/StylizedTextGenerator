@@ -10,8 +10,8 @@
 </head>
 <body>
     <!-- Titles -->
-    <h1 class="title">Stylized Text Generator</h1>
-    <h4 class="subtitle">for Discord</h4>
+    <h1 id="title">Stylized Text Generator</h1>
+    <h4 id="subtitle">for Discord</h4>
 
     <!-- Inputs -->
     <textarea id="textinput" style="resize: none;" placeholder="Type here..." autofocus=true></textarea>
@@ -19,10 +19,11 @@
 
     <!-- Buttons -->
     <button id="convert" onClick="convert_RI()">></button>
-    <button id="darkmode">DM</button>
+    <button id="darkmode" onClick="darkmode()">Dark Mode</button>
+    <button id="lightmode" onClick="lightmode()">Light Mode</button>
 
     <!-- Buttons that change text style -->
-    <div class="texttypes">
+    <div id="texttypes">
 
     </div>
 </body>
